@@ -5,19 +5,14 @@ import conta.model.ContaCorrente;
 import conta.model.ContaPoupanca;
 import conta.util.Cores;
 
+import java.io.IOException;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Menu {
     public static void main(String[] args) {
         Scanner leia = new Scanner(System.in);
 
-        //testando Conta
-        Conta c1 = new Conta(1,123,1,"Matheus", 10000.0f);
-        c1.visualizar();
-        c1.sacar(12000.0f);
-        c1.visualizar();
-        c1.depositar(5000.0f);
-        c1.visualizar();
 
         //testando ContaCorrente
         ContaCorrente cc1 = new ContaCorrente(2,123,1,"Marianna",15000.0f, 1000.0f);
@@ -35,7 +30,7 @@ public class Menu {
         cp1.depositar(5000.0f);
         cp1.visualizar();
 
-        byte opcao;
+
 
         while(true){
             System.out.print(Cores.TEXT_YELLOW + Cores.ANSI_BLACK_BACKGROUND);
@@ -60,48 +55,56 @@ public class Menu {
             System.out.println("                                                     ");
             System.out.print(Cores.TEXT_RESET);
 
-            opcao = leia.nextByte();
+            byte opcao;
+            try {
+                opcao = leia.nextByte();
+            }catch (InputMismatchException e) {
+                System.out.println("Digite valores inteiros!\n");
+                leia.nextLine();
+                opcao = 0;
+            }
 
             switch(opcao){
                 case 1:
                     System.out.print(Cores.TEXT_WHITE);
                     System.out.println("Criar Conta\n");
+                    keyPress();
 
                     break;
                     case 2:
                         System.out.print(Cores.TEXT_WHITE);
                         System.out.println("Listar todas as Contas\n");
-
+                        keyPress();
                         break;
                     case 3:
                         System.out.print(Cores.TEXT_WHITE);
                         System.out.println("Consultar dados da Conta - por número\n");
-
+                        keyPress();
                         break;
                     case 4:
                         System.out.print(Cores.TEXT_WHITE);
                         System.out.println("Atualizar dados da Conta\n");
-
+                        keyPress();
                         break;
                     case 5:
                         System.out.print(Cores.TEXT_WHITE);
                         System.out.println("Apagar a Conta\n");
-
+                        keyPress();
                         break;
                     case 6:
                         System.out.print(Cores.TEXT_WHITE);
                         System.out.println("Saque\n");
-
+                        keyPress();
                         break;
                     case 7:
                         System.out.print(Cores.TEXT_WHITE);
                         System.out.println("Depósito\n");
-
+                        keyPress();
                         break;
                     case 8:
                         System.out.print(Cores.TEXT_WHITE);
                         System.out.println("Transferência entre Contas\n");
-
+                        keyPress();
                         break;
                     case 9:
                         System.out.print(Cores.TEXT_WHITE);
@@ -129,6 +132,20 @@ public class Menu {
         System.out.println("Generation Brasil - matheusq@generation.org");
         System.out.println("github.com/MatheusSPQ");
         System.out.println("*********************************************************");
+    }
+
+    public static void keyPress(){
+        try {
+
+            System.out.println(Cores.TEXT_RESET + "\n\nPressione Enter para Continuar...");
+            System.in.read();
+
+        } catch (IOException e) {
+
+            System.out.println("Você pressionou uma tecla diferente de enter!");
+
+        }
+
     }
 
 
