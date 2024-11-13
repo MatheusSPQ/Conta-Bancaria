@@ -4,7 +4,7 @@
 O **Projeto Conta Bancária** é um guia prático para aprender os conceitos de **Orientação a Objetos (POO)** em Java. Durante o desenvolvimento, novas funcionalidades serão adicionadas progressivamente para aplicar os conhecimentos adquiridos ao longo do curso. Este projeto servirá como base para o **Projeto Java**, que marca o final do Bloco 01 do curso. 📚💻
 
 ### 🎯 Objetivos:
-- 📚 Aprender e praticar os conceitos fundamentais de **OOP**.
+- 📚 Aprender e praticar os conceitos fundamentais de **POO**.
 - 💻 Desenvolver uma aplicação funcional de **Conta Bancária** com diferentes tipos de contas.
 - 🛠️ Utilizar boas práticas de programação, como **modularização** e **reuso de código**.
 
