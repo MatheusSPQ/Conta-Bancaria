@@ -81,6 +81,7 @@ dependendo do terminal utilizado. Caso isso aconteça, ajuste as configurações
 
 ---
 Algumas imagens do projeto:
+--
 ![image](https://github.com/user-attachments/assets/e2553557-6eb9-4287-a48a-c29549d66671)
 --
 ![image](https://github.com/user-attachments/assets/ec897061-166d-4e48-96f5-b0f09d1d4979)
