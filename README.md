@@ -80,5 +80,16 @@ dependendo do terminal utilizado. Caso isso aconteça, ajuste as configurações
 - [GitHub](https://github.com/MatheusSPQ)
 
 ---
+Algumas imagens do projeto:
+![image](https://github.com/user-attachments/assets/e2553557-6eb9-4287-a48a-c29549d66671)
+--
+![image](https://github.com/user-attachments/assets/ec897061-166d-4e48-96f5-b0f09d1d4979)
+--
+![image](https://github.com/user-attachments/assets/08a5bcf4-e929-4e87-a3ea-2b8187a03056)
+
+
+
+
+
 
 **🌟 Se você gostou deste projeto, deixe uma ⭐ no repositório!**
