@@ -64,7 +64,7 @@ Certifique-se de ter o **Java JDK** instalado em sua máquina.
 ## 🛠 Tecnologias Utilizadas
 - **Java** ☕
 - **Git & GitHub** 🐙
-- **Orientação a Objetos (OOP)** 📦
+- **Orientação a Objetos (POO)** 📦
 
 ---
 
