@@ -71,6 +71,7 @@ public class ContaController implements ContaRepository {
         if (contaOp.isPresent()) {
             if(conta.sacar(valor)) {
                 System.out.println("\nSaque na conta: " + numero + " foi realizado com sucesso!");
+                System.out.println("Novo saldo é (R$): " + conta.getSaldo());
             }
         }else{
             System.out.println("\nConta numero: " + numero + " não foi encontrada!");
@@ -84,6 +85,7 @@ public class ContaController implements ContaRepository {
         if (contaOp.isPresent()) {
             conta.depositar(valor);
             System.out.println("\nDepósito na conta número: " + numero + " foi realizado com sucesso!");
+            System.out.println("Novo saldo é (R$): " + conta.getSaldo());
         }else{
             System.out.println("Conta número: " + numero + " não foi encontrada!");
         }
